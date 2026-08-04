@@ -29,8 +29,8 @@ public class Post extends PanacheMongoEntity {
     }
 
     public String getContent() {
-		return content; 
-        // return new StringBuilder(content).reverse().toString(); // Should be: return content;
+		// return content; 
+        return new StringBuilder(content).reverse().toString(); // Should be: return content;
     }
     public Long getTimestamp() {
         return timestamp;
